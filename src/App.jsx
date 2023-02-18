@@ -7,7 +7,7 @@ export default function App(){
 
   return( 
 <main>
-    <img src={LogoImg}></img>
+    <img src={LogoImg} className="m-auto py-14"></img>
     <h1>Publish your podcasts</h1>
     <h2>EVERYWHERE.</h2>
     
@@ -16,6 +16,7 @@ export default function App(){
     Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
   
   <Logos /> 
+  
   <input type="text" placeholder="Email address"></input>
     <button>Request access</button>
 

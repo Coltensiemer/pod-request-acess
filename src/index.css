@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root { 
   --primary: #54E6Af;
   --lightgray: #C2cBe5;
@@ -60,3 +64,17 @@ button {
   border-radius: 2em;
 
 }
+
+
+
+
+/* //// Logo containers */
+.logo-containers { 
+  display: flex;
+  margin: 24px 30px 48px 30px;
+  justify-content: space-around;
+  gap: 1.2em
+}
+ 
+
+
