@@ -9,9 +9,9 @@ import PocketPod from './assets/desktop/pocket-casts.svg'
 
 export default function Logos() { 
     return (
-        <div className='logo-containers bg-white'>  
-        <img  src={Spotify} alt="spotify∂ logo"/> 
-        <img  src={ApplePod} alt="apple logo"/> 
+        <div className='logo-containers'>  
+        <img className="logos"src={Spotify} alt="spotify∂ logo"/> 
+        <img className="logos" src={ApplePod} alt="apple logo"/> 
         <img className='logos three' src={GooglePod} alt="google logo" /> 
         <img className='logos four' src={PocketPod} alt="pocket podcast logo" /> 
         </div>

@@ -10,7 +10,10 @@
   --deepblue: #121725; 
 }
 
-
+* { 
+  font-family: font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;; 
+}
 body { 
   padding: 0;
   margin: 0;
@@ -24,24 +27,35 @@ main {
   align-items: center;
 }
 
+main>img { 
+  padding: 50px;
+}
+
 main>h1 { 
+  font-weight: 300;
   color: var(--primary);
+  margin-bottom: 0;
 }
 
 main>h2 { 
+  font-weight: 300;
+  margin-top: 4px;
   color: white;
 }
 
 main>p {
+  font-weight: 300;
   text-align: center;
   color: var(--lightgray);
-  margin: auto;
+  margin: 0 35px;
   width: calc(100% - 24px);
+  line-height: 25px;
 }
 
 input { 
   margin: auto; 
-  width: calc(100% - 24px);
+  margin-bottom: 16px;
+  width: calc(100% - 32px);
   background-color: var(--darkgray);
   border: none;
   height: 46px;
@@ -50,14 +64,16 @@ input {
 }
 
 input::placeholder { 
+  font-weight: 300;
   position: relative;
   left: 32px; 
   color: var(--lightgray);
 }
 
 button { 
+  font-weight: 300;
     margin: auto; 
-  width: calc(100% - 24px);
+  width: calc(100% - 32px);
   background-color: var(--primary);
   color: var(--darkgray);
     height: 46px;
@@ -73,8 +89,11 @@ button {
   display: flex;
   margin: 24px 30px 48px 30px;
   justify-content: space-around;
-  gap: 1.2em
+  gap: 2em
 }
  
-
+.logos { 
+  width: 52px;
+  fill: #5A668A !important;
+}
 
