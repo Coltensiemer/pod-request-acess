@@ -934,6 +934,11 @@
   "resolved" "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
   "version" "1.0.2"
 
+"validator@^13.9.0":
+  "integrity" "sha512-B+dGG8U3fdtM0/aNK4/X8CXq/EcxU2WPrPEkJGslb47qyHsxmbggTWK0yEA4qnYVNF+nxNlN88o14hIcPmSIEA=="
+  "resolved" "https://registry.npmjs.org/validator/-/validator-13.9.0.tgz"
+  "version" "13.9.0"
+
 "vite@^4.1.0", "vite@^4.1.0-beta.0":
   "integrity" "sha512-LM9WWea8vsxhr782r9ntg+bhSFS06FJgCvvB0+8hf8UWtvaiDagKYWXndjfX6kGl74keHJUcpzrQliDXZlF5yg=="
   "resolved" "https://registry.npmjs.org/vite/-/vite-4.1.1.tgz"
