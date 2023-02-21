@@ -1,6 +1,7 @@
 import React from 'react' 
 import LogoImg from "./assets/desktop/logo.svg"
 import Logos from "./Logos"; 
+import imageHost from "./assets/desktop/image-host.jpg"
 import validator from 'validator';
 
 
@@ -20,21 +21,18 @@ export default function App(){
     }); 
   }
 
+
+// 
   function handleSubmit (event) { 
     event.preventDefault(); 
+    const validEmail = validator.isEmail(formData.email)
 
+setData(prev => ({
+  ...prev,
+  valid: validEmail
+}))
 
-
-    if (validator.isEmail(formData.email)) { 
-      console.log('valid')
-     return 
-    }
-    else { 
-        console.log('needs work')
-      formData.valid === false 
-      
-    }
-  }
+} 
   
 
 
@@ -42,6 +40,7 @@ export default function App(){
   return( 
 
 <main>
+    <img className='background-image' src={imageHost}></img>
     <img src={LogoImg} className="m-auto py-14"></img>
     <h1>Publish your podcasts</h1>
     <h2>EVERYWHERE.</h2>
