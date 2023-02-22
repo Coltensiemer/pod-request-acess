@@ -26,38 +26,55 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  
+  
 }
 
-.background-image { 
- position: absolute;
-background-repeat: no-repeat;
- z-index: -1;
- mix-blend-mode: screen;
-opacity: 5%;
-
+main::before {  
+  position: absolute;
+  z-index: -1;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/desktop/image-host.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: 8%;
+  top:0px;
+  left:0px;
 }
+
+
+
 
 main>img { 
   padding: 50px;
 }
 
 main>h1 { 
-  font-weight: 300;
+  font-weight: 100;
+  text-align: center;
+  margin: 0;
+  width: 100%;
   color: var(--primary);
   margin-bottom: 0;
+  line-height: 38px;
+  font-size: 27px;
 }
 
-main>h2 { 
-  font-weight: 300;
+main>h1>span { 
+  font-weight: 100;
   margin-top: 4px;
   color: white;
 }
 
 main>p {
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
-  color: var(--lightgray);
-  margin: 0 35px;
+  color: var(--mediumgray);
+  margin: 1em 35px;
   width: calc(100% - 24px);
   line-height: 25px;
 }
@@ -65,26 +82,32 @@ main>p {
 input { 
   margin: auto; 
   margin-bottom: 16px;
-  width: calc(100% - 32px);
+  width: 90%;
+  padding: 0 0 0 2rem;
   background-color: var(--darkgray);
   border: none;
   height: 46px;
   border-radius: 2em;
   color: white; 
 
+
 }
 
 input::placeholder { 
   font-weight: 300;
   position: relative;
-  left: 32px; 
+  /* left: 32px;  */
   color: var(--lightgray);
+}
+
+input:focus { 
+  color: white;
 }
 
 button { 
   font-weight: 300;
     margin: auto; 
-  width: calc(100% - 32px);
+  width: 100%;
   background-color: var(--primary);
   color: var(--darkgray);
     height: 46px;
@@ -98,8 +121,23 @@ button:hover {
 }
 
 
+form { 
+   width: calc(100% - 32px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
 .form-error { 
-  color: red;
+  margin: 0px auto;
+  width: calc(100% - 55px);
+  color: #FB3E3E;
+  font-size: 12px;
+
+
+  padding-bottom: 2em;
+ 
 }
 
 

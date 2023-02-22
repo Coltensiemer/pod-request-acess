@@ -40,10 +40,11 @@ setData(prev => ({
   return( 
 
 <main>
-    <img className='background-image' src={imageHost}></img>
+    {/* <img className='background-image' src={imageHost}></img> */}
     <img src={LogoImg} className="m-auto py-14"></img>
-    <h1>Publish your podcasts</h1>
-    <h2>EVERYWHERE.</h2>
+    <h1>PUBLISH YOUR PODCASTS
+      <br></br>
+    <span>EVERYWHERE.</span></h1>
     <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
     Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
   
