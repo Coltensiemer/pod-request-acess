@@ -144,6 +144,7 @@ form {
 
 
 
+
 /* //// Logo containers */
 .logo-containers { 
   display: flex;
@@ -157,3 +158,110 @@ form {
   fill: #5A668A !important;
 }
 
+
+@media (min-width:750px ) {
+
+
+
+  body { 
+    margin: 0;
+    padding: 0;
+ 
+  }
+
+  main { 
+    display: block;
+    margin-left:39px;
+    padding-top: 4em;
+    padding-left:10px;
+    background-color: var(--deepblue);
+    width: calc(100% - 100px);
+    position: relative;
+    top: 200px
+    
+   
+  }
+
+  main::before{ 
+    outline: red 2px solid;
+    position: absolute;
+    z-index: -1;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/tablet/image-host.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    /* clip-path: inset(0% 20% 0% 0%); */
+    opacity: 100%;
+    top: -100px;
+    left: 50px;
+  }
+
+  main>img { 
+    position: absolute;
+    top: -200px;
+    left: -50px;
+  }
+
+
+  main>h1,main>P { 
+    text-align: left;
+  }
+
+  main>h1 { 
+    font-size: 48px;
+  }
+  
+  main>p { 
+
+    position: relative;
+    left: -30px;
+ text-align: left;
+  align-items: start;
+  width: 445px;
+  font-size: 18px;
+  }
+
+  .form-section { 
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  form { 
+    display: block;
+
+    margin: 0;
+    width: calc(100% - 208px);
+  }
+
+
+
+  input { 
+    width: 50%
+
+  }
+
+  button { 
+    position: relative;
+    left: -25px;
+    width: 162px;
+   
+    font-size: 14px;
+    margin-bottom: 30px;
+    
+  }
+
+  .logo-containers { 
+    justify-content: start;
+    width: 500px;
+    margin: 24px 0px 48px 30px;
+  }
+
+  .logos { 
+    width: 780px;
+    gap: 15em;
+  }
+}

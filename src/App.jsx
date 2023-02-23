@@ -41,29 +41,34 @@ setData(prev => ({
 
 <main>
     {/* <img className='background-image' src={imageHost}></img> */}
-    <img src={LogoImg} className="m-auto py-14"></img>
+    <img src={LogoImg} className="logo"></img>
     <h1>PUBLISH YOUR PODCASTS
       <br></br>
     <span>EVERYWHERE.</span></h1>
     <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
     Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
   
+<section className='form-section'>
   <Logos /> 
-
   {/* This is the input/button for form  */}
   <form onSubmit={handleSubmit}>
+
     <label htmlFor="email"></label>
-  <input id="email" 
+  <input id="email"
+  className='input-info' 
   name="email"
    type="text" 
    placeholder="Email address" 
    onChange={handleChange}
    value={formData.email}>
    </input>
+
+   <button className='form-btn' >Request access</button>
 {formData.valid === false && <p className='form-error'>Ops! Please Check your email</p>} 
-    <button className='form-btn' >Request access</button>
+
   </form> 
   {/* END FORM  */}
+  </section>
 
 
  </main> 
