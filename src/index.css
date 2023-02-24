@@ -159,7 +159,7 @@ form {
 }
 
 
-@media (min-width:750px ) {
+@media (min-width:699px ) {
 
 
 
@@ -183,32 +183,33 @@ form {
   }
 
   main::before{ 
-    outline: red 2px solid;
+    outline: none;
     position: absolute;
     z-index: -1;
     content: " ";
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 150%;
     background-image: url(assets/tablet/image-host.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: 100%;
+    
     
     /* clip-path: inset(0% 20% 0% 0%); */
     opacity: 100%;
-    top: -100px;
-    left: 50px;
+    top: -250px;
+    left: 400px;
   }
 
   main>img { 
     position: absolute;
-    top: -200px;
+    top: -225px;
     left: -50px;
   }
 
 
   main>h1,main>P { 
     text-align: left;
+    padding-top: 10px;
   }
 
   main>h1 { 
