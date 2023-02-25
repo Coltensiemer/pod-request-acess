@@ -159,6 +159,18 @@ form {
 }
 
 
+/* For Footer */
+
+.footer { 
+  display: flex;
+  align-items: end;
+  justify-content: start;
+height: 400px;
+margin-left:40px;
+
+}
+
+
 @media (min-width:699px ) {
 
 
@@ -166,39 +178,41 @@ form {
   body { 
     margin: 0;
     padding: 0;
+
  
   }
 
   main { 
     display: block;
-    margin-left:39px;
-    padding-top: 4em;
-    padding-left:10px;
+    
+    margin-left:30px;
+   
     background-color: var(--deepblue);
     width: calc(100% - 100px);
     position: relative;
-    top: 200px
+    top: 200px;
+    
     
    
   }
 
-  main::before{ 
+  /* main::before{ 
     outline: none;
     position: absolute;
     z-index: -1;
     content: " ";
     width: 50%;
-    height: 150%;
+    height: 100%;
     background-image: url(assets/tablet/image-host.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     
     
     /* clip-path: inset(0% 20% 0% 0%); */
-    opacity: 100%;
-    top: -250px;
-    left: 400px;
-  }
+    /* opacity: 100%;
+    top: -325px;
+    left: 400px; */
+
 
   main>img { 
     position: absolute;
@@ -214,7 +228,10 @@ form {
 
   main>h1 { 
     font-size: 48px;
+    margin-bottom: .5em
   }
+
+
   
   main>p { 
 
@@ -241,14 +258,14 @@ form {
 
 
   input { 
-    width: 50%
+    width: 60%;
 
   }
 
   button { 
     position: relative;
     left: -25px;
-    width: 162px;
+    width: 30%;
    
     font-size: 14px;
     margin-bottom: 30px;

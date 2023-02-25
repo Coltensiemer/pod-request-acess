@@ -3,6 +3,7 @@ import LogoImg from "./assets/desktop/logo.svg";
 import Logos from "./Logos";
 import imageHost from "./assets/desktop/image-host.jpg";
 import validator from "validator";
+import Footer from "./Footer"; 
 
 export default function App() {
   //Sets state for email, and if it is true
@@ -13,6 +14,8 @@ export default function App() {
 
   function handleChange(event) {
     setData((preform) => {
+
+      // GOing to return the array with the new target value 
       return {
         ...preform,
         [event.target.name]: event.target.value,
@@ -32,12 +35,16 @@ export default function App() {
     }));
   }
 
+
+
   return (
+    <>
     <main>
       {/* <img className='background-image' src={imageHost}></img> */}
       <img src={LogoImg} className="logo"></img>
       <h1>
         PUBLISH YOUR PODCASTS
+        <br></br>
         <br></br>
         <span>EVERYWHERE.</span>
       </h1>
@@ -69,6 +76,10 @@ export default function App() {
         </form>
         {/* END FORM  */}
       </section>
+      
     </main>
+    <Footer />
+   
+     </>
   );
 }
