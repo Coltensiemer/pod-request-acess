@@ -39,9 +39,10 @@ export default function App() {
 
   return (
     <>
+    <img className='background' src={imageHost}></img>
     <main>
-      <img className='background-image' src={imageHost}></img>
-      <img src={LogoImg} className="logo"></img>
+      
+      <img src={LogoImg} ></img>
       <h1>
         PUBLISH YOUR PODCASTS
         <br></br>
