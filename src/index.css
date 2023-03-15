@@ -31,20 +31,6 @@ main {
   
 }
 
-/* main::before {  
-  position: absolute;
-  z-index: -1;
-  content: " ";
-  width: 100%;
-  height: 100%;
-  background-image: url(assets/desktop/image-host.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  opacity: 8%;
-  top:0px;
-  left:0px;
-} */
 
 
 
@@ -80,15 +66,7 @@ main>p {
 }
 
 /* BackGround image  */
-.background { 
-  position: fixed;
-  z-index: -1;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  left: 38%;
-  overflow: hidden;
-}
+
 
 input { 
   margin: auto; 
@@ -177,6 +155,7 @@ form {
   align-items: end;
   justify-content: start;
 height: 400px;
+padding-top: 153px;
 margin-left:40px;
 
 }
@@ -205,34 +184,10 @@ margin-left:40px;
     background-color: var(--deepblue);
     width: calc(100% - 100px);
     position: relative;
-    top: 200px;
+    top: 300px;
+    width: 633px;
     
   }
-
-
-   /* main::before{ 
-    outline: none;
-    position: absolute;
-    z-index: -1;
-    content: " ";
-    width: 50%;
-    height: 100%;
-    background-image: url(assets/tablet/image-host.jpg);
-    background-size: contain;
-    background-repeat: no-repeat; */
-
-    
-    /* clip-path: inset(0% 20% 0% 0%); */
-    /* opacity: 100%;
-    top: -325px;
-    left: 400px; */
-
-
-  /* main>img { 
-    position: absolute;
-    top: -225px;
-    left: -50px;
-  } */
 
 
   main>h1,main>P { 
@@ -299,11 +254,52 @@ margin-left:40px;
 }
 
 
-@media (min-width:699px ) { 
+
+
+
+@media (min-width:800px ) { 
 main { 
+ 
   position: relative;
   left:105px;
   width: 750px;
 }
 
+
+
 }
+
+.backgroundlg { 
+ 
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 38%;
+  overflow: hidden;
+}
+
+.backgroundmd { 
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 400px;
+  transform: translateY(-50%);
+  left: 38%;
+  overflow: hidden;
+}
+
+.backgroundsm { 
+position: fixed;
+width: 100%;
+overflow: hidden;
+z-index: -1;
+opacity: 8%;
+filter: saturate(50%);
+}
+
+
+
+
+
