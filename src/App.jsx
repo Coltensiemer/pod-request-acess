@@ -48,6 +48,7 @@ export default function App() {
 
     window.addEventListener("resize", handlemediaWidth);
 
+     // Allows unmounting of the event listener 
     return () => {
       window.removeEventListener("resize", handlemediaWidth);
     };
@@ -58,16 +59,16 @@ export default function App() {
   return (
     <>
       {mediaWidth >= 800 && (
-        <img className="backgroundlg" src={imageHostDesk}></img>
+        <img className="backgroundlg" alt="" src={imageHostDesk}></img>
       )}
       {mediaWidth > 699 && mediaWidth < 800 && (
-        <img className="backgroundmd" src={imageHostTablet}></img>
+        <img className="backgroundmd" alt="" src={imageHostTablet}></img>
       )}
       {mediaWidth <= 699 && (
-        <img className="backgroundsm" src={imageHostMobile}></img>
+        <img className="backgroundsm" alt="" src={imageHostMobile}></img>
       )}
       <main>
-        <img src={LogoImg}></img>
+        <img src={LogoImg} alt="Logo"></img>
         <h1>
           PUBLISH YOUR PODCASTS
           <br></br>
@@ -97,13 +98,13 @@ export default function App() {
 
             <button className="form-btn">Request access</button>
             {formData.valid === false && (
-              <p className="form-error">Ops! Please Check your email</p>
+              <p className="form-error">Oops! Please Check your email</p>
             )}
           </form>
           {/* END FORM  */}
         </section>
       </main>
-      <Footer />
+      <Footer className="footer" />
     </>
   );
 }
